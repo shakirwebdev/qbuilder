@@ -1,0 +1,26 @@
+{
+    "name": "ilegacy/qbuilder",
+    "description": "This is a query buidler for to filter data",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohd Shakir",
+            "email": "shakir.webdevelop@gmail.com"
+        }
+    ],
+    "autoload" : {
+		"psr-4" : {
+			"QueryBuilder\\" : "src/"
+		}		
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ],
+            "providers": [
+                "QueryBuilder\\QueryBuilderServiceProvider"
+            ]
+        }
+    }
+}
